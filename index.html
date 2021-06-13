@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="app">
+        <div class="calculator">
+            <header>
+                <h1>Tip Calculator</h1>
+            </header>
+        <div class="bill-amount">$</div>
+        <input type="text" onfocus = "this.value ='' " class="enter-amount" value="enter bill amount">
+        <input list="reviews" onfocus = "this.value ='' " value="Service Review" class="review-list">
+
+        <datalist id="reviews">
+        <option value="Excellent">
+        <option value="Good">
+        <option value="Average">
+        <option value="Needs Improvement">
+        <option value="Bad">
+        </datalist>
+        <h3>Tip amount</h3>
+        <div class="your-tip">
+
+        </div>
+        <footer class="footer">
+           <h1>Add Tip</h1>
+        </footer>
+        </div>
+    </div>
+
+
+    <script src="./main.js"></script>
+</body>
+</html>

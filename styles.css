@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vh;
+  height: 100vh;
+  background: linear-gradient(
+    to bottom right,
+    rgb(10, 201, 201),
+    rgb(1, 55, 65)
+  );
+  justify-content: center;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  align-items: center;
+}
+
+.app {
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 10px 0 10px 0 black;
+  height: 500px;
+  align-items: center;
+}
+
+.calculator {
+  background: white;
+  position: absolute;
+  border-radius: 16px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  height: 100%;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.calculator h1 {
+  text-align: center;
+  background: lime;
+  padding: 10px;
+}
+
+.bill-amount {
+  position: absolute;
+  top: 58;
+  background: rgba(0, 0, 0, 0.1);
+  width: 20px;
+  margin: 5px;
+  margin-top: 10px;
+  margin-left: 20px;
+  font-size: 21px;
+  border-bottom: 3px solid lime;
+}
+
+.enter-amount {
+  position: relative;
+  width: 65%;
+  margin-left: 40px;
+  margin-top: 11px;
+  height: 32px;
+  border-bottom: 3px solid lime;
+}
+
+.review-list {
+  position: relative;
+  width: 65%;
+  margin-left: 40px;
+  margin-top: 11px;
+  height: 32px;
+  border-bottom: 3px solid lime;
+}
+
+.your-tip {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+  height: 75px;
+  width: 100px;
+  margin-top: 50px;
+  margin-left: 100px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+  margin-top: 200px;
+  text-align: center;
+  cursor: pointer;
+}
+
+h3 {
+  position: absolute;
+  text-align: center;
+  top: 150;
+  left: 100;
+}
+
+.your-tip {
+  padding-left: 20px;
+  padding-top: 10px;
+  font-size: 32px;
+}
